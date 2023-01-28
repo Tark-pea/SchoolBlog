@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  text-align: center;
+  color: #336699;
+  margin: 1em 0;
+}
+
+h2, h3 {
+	text-align: center;
+	color: #336699;
+	margin: 2em 0;
+}
+
+p {
+  text-align: center;
+  
+  margin: 1em;
+}
+
+nav {
+  background-color: #336699;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+
+#comment-section {
+  margin: 20px;
+}
+
+#comment{
+	font-size: 20px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+
+form {
+  text-align: center;
+}
+
+
+
+
+input[type="submit"] {
+  padding: 0.5em;
+  font-size: 1em;
+  background-color: #336699;
+  color: white;
+  border: none;
+}
+input[name="user_id"] {
+    width: 100%; /* same width as the comments box */
+    padding: 16px 10px; /* same padding as the comments box */
+    margin: 8px 0; /* same margin as the comments box */
+    box-sizing: border-box; /* makes sure the padding and border are included in the total width */
+	font-size: 20px;
+}
+input[name="comment"] {
+	font-size: 18px;
+}

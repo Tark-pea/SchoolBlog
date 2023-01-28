@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Story title</title>
+  <link rel="stylesheet"  href="postCSS.css"/>
+</head>
+<body>
+	<nav>
+	  <ul>
+		<li><a href="/home">Home</a></li>	
+		<li><a href="/about">About</a></li>
+		<li><a href="/write">Write</a></li>
+		<li><a href="/view">View</a></li>
+		<li><a href="/contact">Contact</a></li>
+	  </ul>
+	</nav>
+	<h1>Story Title
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet venenatis urna cursus eget nunc scelerisque viverra. Duis at consectetur lorem donec massa sapien faucibus et. Quisque non tellus orci ac auctor. Luctus accumsan tortor posuere ac ut consequat. Donec ac odio tempor orci dapibus ultrices in. Egestas dui id ornare arcu. Arcu dictum varius duis at consectetur. Sit amet venenatis urna cursus. Gravida in fermentum et sollicitudin ac orci phasellus egestas. Mattis nunc sed blandit libero volutpat sed cras ornare. Semper feugiat nibh sed pulvinar proin gravida hendrerit. Laoreet id donec ultrices tincidunt arcu non. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Nunc non blandit massa enim. Amet tellus cras adipiscing enim eu turpis egestas. Nibh tortor id aliquet lectus proin nibh nisl condimentum.
+	</p>
+	<div id="comment-section">
+	    <h2>Comments</h2>
+		<form action="submit-comment.php" method="post">
+		<div class="grid-container">
+			<div class="user_id-input">
+				<label for="user_id">Your Name:</label>
+				<input type="text" id="user_id" name="user_id">
+			</div>
+		<div class="comments-input">
+			<label for="comment">Your Comment:</label>
+			<textarea id="comment" name="comment" placeholder="Write a nice comment"></textarea>
+			<br>
+			<input type="submit" value="Submit">
+			
+	    </form><hr>
+	    <div id="comment">
+		<?php
+		    // Use a PHP script to retrieve comments from the database and display them
+			
+		    $query = "SELECT * FROM comments WHERE story_id = $story_id";
+			
+		    $result = mysqli_query($connection, $query);
+		    while ($row = mysqli_fetch_assoc($result)) 
+		    {
+		  	    echo '<p>' . $row['user_id'] . " " . $row['comment'] . '</p>';
+				
+		    }
+			// echo "<p>" . $row['comment'] . "</p>";
+		?>
+		</div>
+	</div>
+  
+</body>
+</html>
