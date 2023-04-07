@@ -2,25 +2,24 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #121212;
+  background-color: #f8f8f8;
 }
 
-h1, h2, h3 {
+h1 {
   text-align: center;
   color: #336699;
-}
-p {
-  margin: 1em;
-  text-align: center;
-  color: #c9d1d9;
+  margin: 1em 0;
 }
 
-h4 {
-	text-align: center
+h2, h3 {
+	text-align: center;
+	color: #336699;
+	margin: 2em 0;
 }
-a{
-	color: #008080;
-	text-decoration: none;
+
+p {
+  margin: 1em;
+  text-align: justify;
 }
 
 nav {
@@ -47,44 +46,34 @@ nav a:hover {
   background-color: #ddd;
 }
 
+aside {
+  background-color: #ddd;
+  padding: 1em;
+  float: right;
+  width: 25%;
+}
+
 form {
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 20px;
+  text-align: center;
 }
 
 form label {
   font-size: 1.2em;
   color: #336699;
-  display: block;
-  margin: 1em 0;
 }
 
-form input {
+form input[type="text"] {
   padding: 0.5em;
   font-size: 1.2em;
-  width: 100%;
+  width: 80%;
   border: 1px solid #336699;
-  background-color: #2b2b2b;
-  border-radius: 25px;
 }
 
-form textarea {
-  padding: 0.5em;
-  font-size: 1.2em;
-  width: 100%;
-  border: 1px solid #336699;
-  background-color: #2b2b2b;
-  resize: vertical;
-  border-radius: 25px;
-}
 form input[type="submit"] {
   padding: 0.5em;
   font-size: 1.2em;
   background-color: #336699;
   color: white;
   border: none;
-  margin-top: 1em;
-  width: 100%;
 }
 

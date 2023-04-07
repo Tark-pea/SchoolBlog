@@ -2,12 +2,17 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #121212;
 }
 
 h1, h2, h3, h4 {
   text-align: center;
   color: #336699;
+}
+p {
+  margin: 1em;
+  text-align: justify;
+  color: #c9d1d9;
 }
 nav {
   background-color: #336699;
@@ -35,6 +40,7 @@ nav a:hover {
 form {
   width: 80%;
   margin: 0 auto;
+  border-radius: 20px;
 }
 
 form label {
@@ -49,6 +55,8 @@ form input[type="text"], form input[type="title"] {
   font-size: 1.2em;
   width: 100%;
   border: 1px solid #336699;
+  background-color: white;
+  border-radius: 25px;
 }
 
 form textarea {
@@ -56,7 +64,9 @@ form textarea {
   font-size: 1.2em;
   width: 100%;
   border: 1px solid #336699;
+  background-color: white;
   resize: vertical;
+  border-radius: 25px;
 }
 
 form input[type="submit"] {

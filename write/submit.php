@@ -9,7 +9,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "npfhdatabase";
-$url = '/home/';
+$url = "submitted.php";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -21,7 +21,7 @@ if ($conn->connect_error) {
 // Insert the form data into the database
 $sql = "INSERT INTO storys (name, title, story) VALUES ('$name', '$title', '$story')";
 
-if ($conn->query($sql) === TRUE) {
+if ($conn->query($sql) == TRUE) {
     echo "New record created successfully";
 	header( "Location: $url" );
 } else {
@@ -29,4 +29,5 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
+
 ?>
