@@ -39,8 +39,7 @@ CREATE TABLE `comments` (
 --
 
 INSERT INTO `comments` (`id`, `comment`, `story_id`, `user_id`) VALUES
-(14, 'I am so sorry about your experience ', 1, 'Chase'),
-(15, 'lorem ipsum', 1, 'braydon');
+(1, 'lorem ipsum', 1, 'dolor');
 
 -- --------------------------------------------------------
 
@@ -60,8 +59,7 @@ CREATE TABLE `storys` (
 --
 
 INSERT INTO `storys` (`id`, `name`, `title`, `story`) VALUES
-(2, 'Braydon', 'My bullying experiece', 'This is the story of a guy named '),
-(3, 'paul', 'Hello', 'this is my story');
+(1, 'dolor', 'Hello', 'this is my story');
 
 --
 -- Indexes for dumped tables
@@ -88,13 +86,13 @@ ALTER TABLE `storys`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `storys`
 --
 ALTER TABLE `storys`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
